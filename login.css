@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    /* background-color:black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("./assete/images/login_image1.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+/* Main container for the form */
+.login-container {
+    background: white;
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px 5px white;
+    background-color: white;
+}
+/* Heading */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+}
+/* Input group container */
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    font-size: 14px;
+    color:black;
+    margin-bottom: 8px;
+}
+/* Input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid black;
+    border-radius: 7px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+/* On focus, add a border color */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color:black;
+}
+/* Error message styling */
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+/* Success state */
+.success input[type="text"],
+.success input[type="email"],
+.success input[type="password"] {
+    border-color:black;
+}
+/* Submit button */
+button[type="submit"] {
+    padding: 12px;
+    background-color:black;
+    color:white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    border: 1px solid black;
+}
+button[type="submit"]:hover {
+  
+    background-color:gray;
+    color: white;
+   
+}
+
+/* Link to the signup page */
+p {
+    text-align: center;
+    font-size: 14px;
+    padding-top: 15px;
+}
+p a {
+    color: black;
+    text-decoration: none;
+}
+p a:hover {
+    text-decoration: underline;
+
+}
+/* Responsive design */
+@media screen and (max-width: 500px) {
+    .login-container {
+        padding: 20px;
+        width: 90%;
+    }
+}
+
+from
+
+
+
+
+
+
+
+
