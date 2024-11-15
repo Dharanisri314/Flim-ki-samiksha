@@ -39,21 +39,36 @@
             let valid = true;
 
             // Check if the username is empty
-            if (!usernameInput.value) {
-                usernameError.textContent = 'Username is required.';
+            if (!username || typeof username.value !== 'string' || username.value.trim() === '') {
+                usernameError.textContent = 'Name cannot be empty or just spaces.';
                 usernameError.style.display = 'block';
                 valid = false;
-            }
+            } else if (!validateName(username.value)) {
+                usernameError.textContent = 'Name can only contain letters.';
+                usernameError.style.display = 'block';
+                valid = false;
+            } 
 
             // Check if the email is empty or not in correct format
-            if (!emailInput.value) {
-                emailError.textContent = 'Email is required.';
+            if (!emailInput.value || typeof emailInput.value !== 'string' || emailInput.value.trim() === '') {
+                emailError.textContent = 'Email cannot be empty or just spaces.';
+                emailError.style.display = 'block';
+                valid = false;
+            } else if (/\s/.test(emailInput.value)) {
+                emailError.textContent = 'Email cannot contain spaces.';
                 emailError.style.display = 'block';
                 valid = false;
             } else if (!validateEmail(emailInput.value)) {
                 emailError.textContent = 'Please enter a valid email address.';
                 emailError.style.display = 'block';
                 valid = false;
+            } else if (!validateEmail(emailInput.value)) {
+                emailError.textContent = ' Use @ only';
+                emailError.style.display = 'block';
+                valid = false;
+            }
+             else {
+                emailError.style.display = 'none';
             }
 
             // Check if the password is empty
@@ -97,5 +112,9 @@
             const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
             return emailPattern.test(email);
         }
+        function validateName(name) {
+            // Regular expression to allow alphabets, spaces, and hyphens
+            const nameRegex = /^[a-zA-Z\s'-]+$/;
+            return nameRegex.test(name)};
     });
 

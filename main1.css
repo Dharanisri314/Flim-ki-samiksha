@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+body{
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    background-color: rgb(33, 33, 33);
+    width: 100%;
+    overflow-x: hidden;
+    background: fixed;
+    background-size: 100% 100% ;
+    animation: slider 10s linear infinite;
+    /* background: #000; */ 
+}
+@keyframes slider{
+    0%{background-image: url("./assete/images/Amaran.jpg")}
+    30%{background-image: url("./assete/images/brother.jpg");}
+    60%{background-image: url("./assete/images/oh\ may.jpg");}
+    100%{background-image: url("./assete/images/sita_raman.jpg");}
+}
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    box-shadow: 0 0 10px #000;
+    background-color: rgba(0,0,0,0.5);
+    /* background-color: #000; */
+}
+header#logo{
+    flex: 1;
+    color: #fff;
+    margin-left: 50px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+#search-input{
+    width: 150%;
+    height: 3.5em;
+    border: none;
+    outline: none;
+    background-color: #f2f2f2;
+    border-radius: 30px;
+    color: gray;
+    font-size: 16px;
+    text-align: center;
+}
+
+header ul{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 380px;
+}
+header ul li{
+    list-style: none;
+}
+header ul li  a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding:10px 15px;
+}
+header ul li a:hover{
+    border-bottom: 2px solid cadetblue;
+}
+
+#search-bg{
+    width:50px;
+    height: 50px;
+    background-color: green;
+    position: absolute;
+    top: 16px;
+    left: 41.9%;
+    border-radius: 50px;
+    /* border: 1px black solid; */
+}
+#search-img{
+    position: absolute;
+    top: 28px;
+    left: 42.5%;
+    /* background-color: black; */
+}
+@media(max-width:1000px){
+    .search-box button{
+        position: absolute;
+    } 
+    header ul{
+        position: fixed;
+        top: 100px;
+        background-color:rgba(0,0,0,0.5);
+        height: calc(100vh - 100px);
+        width: 50%;
+        flex-direction: column;
+    }
+   header .menu{
+    display: block;
+    width: 100px;
+    text-align: center;
+}
+/* #chk1:checked ~ ul{
+    right: 0;
+} */
+
+@media(max-width:600px){
+    header.logo{
+        font-size: 10px;
+        margin-left: 8px;
+    }
+}
+
+}

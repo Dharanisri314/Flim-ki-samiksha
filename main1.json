@@ -1,0 +1,49 @@
+{
+    "images": [
+      {
+        "id": "img001",
+        "url": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fopen.spotify.com%2Ftrack%2F1kmJ0EvXClJAt0fSSQLX1m&psig=AOvVaw1uN64HrOeZQ1doVAWL9_7d&ust=1731558087851000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNiyp9u62IkDFQAAAAAdAAAAABAE",
+        "type": "banner",
+        "format": "jpg",
+        "description": "Banner image for The Great Adventure movie",
+        "altText": "Banner of The Great Adventure movie"
+      },
+      {
+        "id": "img002",
+        "url": "https://example.com/images/thumbnail01.jpg",
+        "resolution": "300x450",
+        "type": "thumbnail",
+        "format": "jpg",
+        "description": "Thumbnail for The Great Adventure",
+        "altText": "Thumbnail of The Great Adventure movie"
+      },
+      {
+        "id": "img003",
+        "url": "https://example.com/images/poster01.jpg",
+        "resolution": "1080x1920",
+        "type": "poster",
+        "format": "jpg",
+        "description": "Poster image for The Great Adventure",
+        "altText": "Poster of The Great Adventure movie"
+      },
+      {
+        "id": "img004",
+        "url": "https://example.com/images/banner02.jpg",
+        "resolution": "1920x1080",
+        "type": "banner",
+        "format": "png",
+        "description": "Banner for documentary series Nature's Wonders",
+        "altText": "Banner of Nature's Wonders documentary series"
+      },
+      {
+        "id": "img005",
+        "url": "https://example.com/images/thumbnail02.jpg",
+        "resolution": "300x450",
+        "type": "thumbnail",
+        "format": "png",
+        "description": "Thumbnail for documentary series Nature's Wonders",
+        "altText": "Thumbnail of Nature's Wonders documentary series"
+      }
+    ]
+  }
+  
